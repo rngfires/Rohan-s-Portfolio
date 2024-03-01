@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins",sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    color: #fff;
+}
+#header{
+    width: auto;
+    height: 100vh;
+    background-image: url(suit\ blazer2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    
+}
+.container{
+    padding: 10px 10%;
+}
+h1{
+
+}
+
+
+
+nav{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 8px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+nav ul li a:hover::after{
+    width: 100px;
+}
+.header-text{
+
+   font-size: 3rem;
+    margin-top: 10rem;
+}
+.header-text h1{
+    font-size: 30px;
+    margin-top: 20rem;
+}
+.header-text h1 span{
+    color: #27ec16;
+}
+
+/* -------about------- */
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 90%;
+    border-radius: 10px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.about-col-2 p{
+    font-size: 25px;
+
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-contents.active-tab{
+    font-size: 10px;
+}
+.tab-contents.active-tab ul li{
+    font-size: 20px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position:relative;
+}
+.tab-links::after{
+    content: '';
+    width: 2;
+    height: 8px;
+    background: #ff009d;
+    position: relative;
+    left: 0;
+    bottom: -20px;
+    transition: 0.5s;
+}
+.tab-links.active link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #00ff88;
+    font-size: 20px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*------Portfolio------*/
+
+#portfolio{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minimax(50px,5fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    background-size: contain;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+.work img{
+    width: 100%;
+    height: 40vh;
+    border-radius: 10px;
+    display: flex;
+    transition: transform 0.5s;
+}
+.work-list{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    transition: transform 0.5s;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+} 
+.btn:hover{
+    background: #ff004f;
+}   
+/*--------Contact--------*/   
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 30%;
+}
+.contact-left p{
+    margin-top: 10px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 40px;
+    font-size: 40px;
+}
+
+.fa-solid, .fas {
+    font-weight: 900;
+    padding-right: 10px;
+}
+.social-content{
+    margin-top: 30px;
+}
+.social-content a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+
+}
+.social-content a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+    margin-left: auto;
+}
+.btn .btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+.contact-right form{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+form .btn2{
+    color: white;
+    background-color: black;
+}
+
+.fa-solid{
+    
+}
